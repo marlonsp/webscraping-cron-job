@@ -1,0 +1,39 @@
+# Excluir arquivos de ambiente virtual
+.env
+*.env
+
+# Excluir arquivos de log
+*.log
+
+# Excluir arquivos de cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Excluir diretórios de configuração do editor
+.vscode/
+.idea/
+*.swp
+
+# Excluir dependências instaladas (se houver um diretório de dependências)
+venv/
+env/
+
+# Excluir arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Excluir arquivos de saída (se houver)
+*.out
+*.class
+
+# Excluir arquivos temporários
+*.tmp
+*.temp
+
+# Excluir arquivos de compilação
+build/
+dist/
+
+# Excluir arquivos específicos do projeto (adapte conforme necessário)
+news.txt

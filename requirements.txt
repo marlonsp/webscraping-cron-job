@@ -1,0 +1,8 @@
+datetime
+requests
+bs4
+datetime
+langchain_openai
+langchain_pinecone
+pinecone
+python-dotenv
