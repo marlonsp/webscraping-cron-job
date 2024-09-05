@@ -7,9 +7,9 @@ from pinecone import Pinecone
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+# load_dotenv()
+# PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 def get_links(url):
     # Enviando requisição HTTP para obter o conteúdo da página
@@ -125,21 +125,21 @@ def my_scheduled_task():
     url = f'https://www.poder360.com.br/{yesterday_str}'
     print(f"Date link: {url}")
 
-    links = get_links(url)
-    links_filtrados = [link for link in links if not link.startswith("https://www.poder360.com.br/author/")]
-    print(f"Cron job links: {len(links_filtrados)}")
+    # links = get_links(url)
+    # links_filtrados = [link for link in links if not link.startswith("https://www.poder360.com.br/author/")]
+    # print(f"Cron job links: {len(links_filtrados)}")
 
-    news = []
-    for link in links_filtrados:
-        article_info = extract_article_info(link)
-        news.append(article_info)
+    # news = []
+    # for link in links_filtrados:
+    #     article_info = extract_article_info(link)
+    #     news.append(article_info)
     
     # Salva as noícias em um txt
     # with open('news.txt', 'w', encoding='utf-8') as f:
     #     for item in news:
     #         f.write("%s\n" % item)
 
-    push_to_vdb(news)
+    # push_to_vdb(news)
 
     print("Cron job finished")
     
